@@ -1,0 +1,68 @@
+
+	<div id="newContact" data-bb-type="screen" data-bb-effect="slide-left">
+		<script src="contactform.js"></script>
+		<div data-bb-type="title" data-bb-caption="Add a Contact"></div>
+
+		<div data-bb-type="round-panel"> 
+			<div data-bb-type="label-control-container-horizontal">
+				<div data-bb-type="row">
+					<div data-bb-type="label">First Name: </div>
+					<input type="text" id="firstName"/>
+  				</div>
+  				<div data-bb-type="row">
+					<div data-bb-type="label">Last Name: </div>
+					<input type="text" id="lastName"/>
+  				</div>
+  				<div data-bb-type="row">
+					<div data-bb-type="label">Mobile Phone: </div>
+					<input type="text" id="mobilePhone"/>
+  				</div>
+  				<div data-bb-type="row">
+					<div data-bb-type="label">Home Phone: </div>
+					<input type="text" id="workPhone"/>
+  				</div>
+  				<div data-bb-type="row">
+					<div data-bb-type="label">Work Email: </div>
+					<input type="text" id="workEmail"/>
+  				</div>
+  				<div data-bb-type="row">
+					<div data-bb-type="label">Home Email: </div>
+					<input type="text" id="homeEmail"/>
+  				</div>
+  				<div data-bb-type="row">
+					<div data-bb-type="label">How We Met: </div>
+					<input type="text" id="description"/>
+  				</div>
+  				
+			</div>	
+
+					<div data-bb-type="button" onclick="createContact();" id="submitButton">Add Contact</div>
+
+		</div>
+
+		<div data-bb-type="action-bar">
+			<div data-bb-type="action" data-bb-style="tab" data-bb-selected="true" data-bb-img="images/cloud_up.png" onclick="displayContactForm();">New Contact</div>
+			<div data-bb-type="action" data-bb-style="tab"  data-bb-img="images/cloud_sync.png" onclick="displayAllContacts();">All Contacts</div>
+		</div>
+
+	</div>
+
+	<div id="allContacts" data-bb-type="screen" data-bb-effect="slide-left" style="display:none">
+		
+		<div data-bb-type="title" data-bb-caption="All Contacts"></div>
+
+		<div data-bb-type="round-panel"> 
+			<div data-bb-type="panel-header">All Contacts</div>
+			<div  id="mylist" data-bb-type="image-list"></div>	
+		</div>
+
+		<div data-bb-type="action-bar">
+			<div data-bb-type="action" data-bb-style="tab" data-bb-selected="true" data-bb-img="images/cloud_up.png" onclick="displayContactForm();">New Contact</div>
+			<div data-bb-type="action" data-bb-style="tab"  data-bb-img="images/cloud_sync.png" onclick="displayAllContacts();">All Contacts</div>
+		</div>
+
+	</div>
+	
+	
+	
+

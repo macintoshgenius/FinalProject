@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+             xmlns:rim="http://www.blackberry.com/ns/widgets"
+             version="2.0.0.0" id="com.example.HelloWorld">
+ 
+   <author href="http://www.macintoshgenius.com/">William Dear</author>
+ 
+   <name>Milestone 1</name>
+ 
+   <description>
+       Milestone 1 - Contacts and Database
+   </description>
+	<feature id="blackberry.app"/>
+	<feature id="blackberry.app.event"/>
+  <feature id="blackberry.pim.contacts"/>
+  <feature id="blackberry.invoke" required="true" version="1.0.0.0"/>
+  <rim:permit>access_pimdomain_contacts</rim:permit>
+	<content src="index.htm" />
+ 
+</widget>
+ 
